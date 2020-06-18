@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>  
+  <?php 
+  session_start(); 
+  if(!isset($_SESSION['oturum'])) { 
+    header("Location:login.php?p=2");
+  }
+  else {  
+      echo "";
+  }
+  
+  ?>
+  
+    <div class="dashboard-container">
+      <h1>Dashboard</h1>
+    </div>
+
+    <div class="hello-container"><p>Merhaba</p></div>
+
+    <div class="logout-container">
+      <a href="cikis.php">Güvenli Çıkış</a>
+    </div>
+
+    <div class="list-container">
+      <h3>Haber Listesi</h2>
+        <table class="table">
+          <tr>
+            <th>#</th>
+            <th>Haber Başlığı</th>
+            <th>Haber Kategorisi</th>
+            <th>Aksiyon</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Korona Virüsü Hızla Yayılıyor!</td>
+            <td>Genel</td>
+            <td><a href="detay.php">Detay</a></td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td>Kadkıköyde Hezimet!</td>
+              <td>Spor</td>
+              <td><a href="detay.php">Detay</a></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Kara Kış Kapıda</td>
+              <td>Hava Durumu</td>
+              <td><a href="detay.php">Detay</a></td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>

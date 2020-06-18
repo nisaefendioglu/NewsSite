@@ -1,0 +1,6 @@
+RewriteEngine On 
+RewriteRule ^login.html$ login.php [L,NC]
+RewriteRule ^index.html$ index.php [L,NC]
+RewriteRule ^cikis.html$ cikis.php [L,NC]
+RewriteRule ^detay.html$ detay.php [L,NC]
+RewriteRule ^kontrol.html$ kontrol.php [L,NC]

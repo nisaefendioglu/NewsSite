@@ -1,0 +1,2 @@
+addtype application/x-httpd-php .html
+addtype application/x-httpd-php .htm

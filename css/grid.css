@@ -1,0 +1,66 @@
+@media (max-width: 1024px){
+	.search-box{
+		left: 0;
+	}
+}
+
+@media (max-width: 768px){
+	.head-logo{
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	.search-box{
+		display: none;
+	}
+	.log-spt-big{
+		display: none;
+	}
+	.slider-img-big-area{
+		height: 210px;
+	}
+
+	.ic-ust-nm span{
+		line-height: 0;
+	}
+
+}
+@media (max-width: 425px){
+	.menuac{
+		display: block;
+	}
+	.nav-top-bg{
+		display: none;
+	}
+
+	.p-ct{
+		border-bottom: 2px solid #f1f5f8;
+	}
+	.small-image{
+		width: 45px;
+	}
+	.ic-alt-boxs a{
+		width: 240px;
+	}
+
+	.f-top-ct{
+		border-bottom: 2px solid #f1f5f8;
+	}
+
+	.f-cpy{
+		width: 100%;
+	}
+}
+
+@media (max-width: 375px){
+	form input[type="textbox"],
+	input[type="password"],
+	input[type="submit"]{
+		width: 310px;
+	}
+	.forgot-p, .accept-msg{
+		width: 305px;
+	}
+}
